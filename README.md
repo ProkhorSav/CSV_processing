@@ -18,7 +18,7 @@
 • Python 3.6 или новее
 • (Опционально) virtualenv или venv
 
-#Установка:
+Установка:
 
 Клонируйте репозиторий или скачайте архив: git clone https://github.com/ProkhorSav/CSV_processing
 Создайте и активируйте виртуальное окружение (рекомендуется): python3 -m venv venv
@@ -33,7 +33,7 @@ venv\Scripts\activate.bat (Windows)
 min, max, sum, avg, count
 Формат: функция=имя_столбца, например "max=rating"
 
-#Примеры:
+Примеры:
 
 Фильтрация по цене больше 500: python main.py products.csv --where "price>500"
 
@@ -43,8 +43,9 @@ min, max, sum, avg, count
 
 Подсчёт количества товаров Samsung: python main.py products.csv --where "brand=samsung" --aggregate "count=brand"
 
-#Тесты:
+Тесты:
 
 Установите pytest: pip install pytest pytest-cov
 Запустите тесты: pytest --cov=csv_processor tests/
+
 Автор: Савенков Прохор Сергеевич
