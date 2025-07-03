@@ -33,7 +33,7 @@ venv\Scripts\activate.bat (Windows)
 min, max, sum, avg, count
 Формат: функция=имя_столбца, например "max=rating"
 
-Примеры
+#Примеры:
 
 Фильтрация по цене больше 500: python main.py products.csv --where "price>500"
 
@@ -43,4 +43,8 @@ min, max, sum, avg, count
 
 Подсчёт количества товаров Samsung: python main.py products.csv --where "brand=samsung" --aggregate "count=brand"
 
+#Тесты:
+
+Установите pytest: pip install pytest pytest-cov
+Запустите тесты: pytest --cov=csv_processor tests/
 Автор: Савенков Прохор Сергеевич
